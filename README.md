@@ -1,31 +1,25 @@
-# roboJS
+# Lucha Robótica Definitiva JS
 ## Introduction
-roboJS is a clone of the popular robocode program to JavaScript. You can code your own robot in JavaScript and have it fight other bots. If robocode itself is unfamiliar to you, head over to http://robowiki.net/ to learn more about it.
+Esta versión se basa en la versión creada por **jeickmann** que a su vez está basada en el popular robocode, que está basada en darse golpes como panes, pero programando, que siempre es más agradable.
 
-roboJS tries to mirror the behaviour of robocode as closely as possible.
+Podrás desarrollar tu propio bot y enfrentarte en la ARENA a los más despiadados enemigos. 
 
 ## Setup
-Just clone the repository and get it served from an http server. The easiest way (if you have node.js installed) is to install http-server
+Se debe clonar el repositorio y lanzarlo dentro de un servidor http. La forma más sencilla (si tenemos instalado NodeJS) es a través de la librería **http-server**
 > npm install http-server
-and then run http-server in the directory of roboJS
+y después lanzar el comando siguiente dentro del directorio del proyecto
 > http-server
 
-You can then start roboJS by simply using your favorite webbrowser and open http://localhost:8080
+Puedes arrancar la arena de entrenamiento simplemente accediendo a la siguiente url desde el navegador http://localhost:8080
 
 ## Starting roboJS
-the battle runner is started using by simply opening the roboJS-Folder via http in a Webbrowser (please note that you need a webbrowser that supports HTML5 Webworkers, a recent Chrome, Firefox or Safari should do the job).
+Para poder controlar la arena de batalla, podemos hacerlo a través de la url en el navegador, a través de los parámetros que introducimos. El parámetro más importante es **bot**, mediante el cual podemos especificar qué bot es el que vamos a ponder a luchar.
 
-You can control the battle running using Get-Parameters. The most important ones are bot1 and bot2 which determine what oppponents the runner will load. The values can be simply robot-names. The runner will then load the file main.js in the appropriate subfolder of the "bots"-subfolder.
+Ejemplo:
+Para lanzar una batalla entre el bot de entrenamiento y el bot llamado __plantillabot__ debemos acceder a la siguiente url:
 
-Example:
-To load a battle between the two bots "tracker" and "walls", simply open
+> http://localhost:8080/?bot=plantillabot
 
-> http://localhost:8080/?bot1=tracker&bot2=walls
+Para crear nuestro propio robot, podemos modificar el existente dentro del directorio **bots/plantillabot**. Se le puede cambiar el nombre al directorio por el de nuestro bot, siempre y cuando adaptemos la url en el momento de lanzar la batalla.
 
-Each battle lasts 10 rounds by default. You can change the number of rounds by specifying the parameter rounds
-
-> http://localhost:8080/?bot1=tracker&bot2=walls&rounds=20
-
-In order to create your own robot, it is easiest to copy the folder bots/template to a new folder in the "bots"-directory and make changes there. The bots/template/main.js contains all the necessary code to get a robot running and a short documentation to the methods you can use to control your robot. Don't forget to change your robots name.
-
-I will add a more in-depth documentation in the future.
+Todos los bots disponen de un fichero **main.js** donde se encuentra todo el código necesario para poder interatuar con las diferentes acciones del bot. 
