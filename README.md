@@ -25,3 +25,7 @@ Para lanzar una batalla entre el bot de entrenamiento y el bot llamado __plantil
 Para crear nuestro propio robot, podemos modificar el existente dentro del directorio **bots/plantillabot**. Se le puede cambiar el nombre al directorio por el de nuestro bot, siempre y cuando adaptemos la url en el momento de lanzar la batalla.
 
 Todos los bots disponen de un fichero **main.js** donde se encuentra todo el código necesario para poder interatuar con las diferentes acciones del bot. 
+
+Puedes acceder a la documentación específica del API para manejar tu robot desde el siguiente enlace:
+
+[API LuchaRobóticaDefinitivaJS](md/api.md)
