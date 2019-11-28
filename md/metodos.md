@@ -41,6 +41,7 @@ this.turnRadarLeft(radians);
 Movimiento del radar situado en la parte superior del arma. Como antes, cuando el arma gira, el radar también gira. 
 
 ### Corrección de movimiento
+---
 
 ```javascript
 this.setAdjustGunForRobotTurn(true);
@@ -50,6 +51,7 @@ this.setAdjustRadarForGunTurn(true);
 Estos dos métodos nos permiten rectificar el movimiento del arma sobre el movimiento del robot y del radar sobre el arma, respectivamente.
 
 ### Movimiento del Robot
+---
 
 ```javascript
 this.moveForward(distance);
@@ -59,6 +61,7 @@ this.moveBack(distance);
 El movimiento se realiza con 1px/turno
 
 ### Disparar!!
+---
 
 ```javascript
 this.fire(firingPower);
@@ -69,6 +72,7 @@ La potencia del disparo (firingPower) puede tomar valores desde 0.1 a 3. El robo
 Si la potencia que utilizamos es muy alta, es decir, cercana a 3, las balas son más lentas y causan más daño en el rival. La potencia de disparo se obtiene de la vida del robot que dispara. Si logramos impactar en el enemigo, recuperamos vida.
 
 ### Métodos Útiles
+---
 
 **this.x this.y** 
 Posición actual del robot. Cuando arranca la ronda el roboto se sitúa en un punto aleatorio.
