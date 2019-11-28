@@ -26,6 +26,8 @@ Para crear nuestro propio robot, podemos modificar el existente dentro del direc
 
 Todos los bots disponen de un fichero **main.js** donde se encuentra todo el código necesario para poder interatuar con las diferentes acciones del bot. 
 
-Puedes acceder a la documentación específica del API para manejar tu robot desde el siguiente enlace:
+Puedes acceder a la documentación específica del API para manejar tu robot desde los siguientes enlaces:
 
-[API LuchaRobóticaDefinitivaJS](md/api.md)
+[API Eventos LuchaRobóticaDefinitivaJS](md/eventos.md)
+
+[API Métodos LuchaRobóticaDefinitivaJS](md/metodos.md)
