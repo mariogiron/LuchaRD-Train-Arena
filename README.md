@@ -7,12 +7,14 @@ Podrás desarrollar tu propio bot y enfrentarte en la ARENA a los más despiadad
 ## Setup
 Se debe clonar el repositorio y lanzarlo dentro de un servidor http. La forma más sencilla (si tenemos instalado NodeJS) es a través de la librería **http-server**
 > npm install http-server
+
 y después lanzar el comando siguiente dentro del directorio del proyecto
+
 > http-server
 
 Puedes arrancar la arena de entrenamiento simplemente accediendo a la siguiente url desde el navegador http://localhost:8080
 
-## Starting roboJS
+## Comienza el Entrenamiento
 Para poder controlar la arena de batalla, podemos hacerlo a través de la url en el navegador, a través de los parámetros que introducimos. El parámetro más importante es **bot**, mediante el cual podemos especificar qué bot es el que vamos a ponder a luchar.
 
 Ejemplo:
